@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Order Plzzz...</title>
+    <style>
+        
+        body{
+            background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210331/pngtree-musical-instrument-combination-music-background-image_600864.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 200px;
+        }
+        #name{
+            border-radius: 10%;
+        }
+        #email{
+            border-radius: 10%;
+        }
+        #phone{
+            border-radius: 10%;
+        }
+        #instrument{
+            border-radius: 6%;
+        }
+        h1{
+            text-align: center;
+            font-weight: 900;
+        }
+        label{
+            font-weight: 900;
+            font-size: xx-large;
+        }
+        input{
+            font-size: xx-large;
+        }
+        .instrument{
+            font-size: xx-large;
+        }
+        #instrument{
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+  <h1>Order Your Musical Instrument</h1>
+  <h1 style="font-style: italic;">Let the gift of music fill your home with joy and fun this holiday season. Cling On!</h1>
+    <center>
+        <form action="/submit-order" method="post">
+    
+    <label for="name">Full Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="your Name" required><br><br>
+
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" placeholder="Your email" required><br><br>
+
+    <label for="phone">Phone Number:</label><br>
+    <input type="tel" id="phone" name="phone" placeholder="Your Mobile No"><br><br>
+
+    <label for="instrument">Select Instrument:</label><br>
+    <select id="instrument" name="instrument" required>
+      <option value="">-- Choose an Instrument --</option>
+      <option value="guitar">Guitar</option>
+      <option value="piano">Piano</option>
+      <option value="drums">Drums</option>
+      <option value="violin">Violin</option>
+      <option value="keyboards">Keyboards</option>
+      <option value="wind insruments">Wind Instruments</option>
+      <option value="accessories">Accessories</option>
+    </select><br><br>
+
+    <label>Quantity:</label><br>
+    <input type="radio" id="qty1" name="quantity" value="1" required>
+    <label for="qty1">1</label>
+
+    <input type="radio" id="qty2" name="quantity" value="2">
+    <label for="qty2">2</label>
+
+    <input type="radio" id="qty3" name="quantity" value="3">
+    <label for="qty3">3</label>
+
+    <input type="radio" id="qty4" name="quantity" value="4">
+    <label for="qty4">4</label>
+
+    <input type="radio" id="qty5" name="quantity" value="5">
+    <label for="qty5">5</label><br><br>
+
+    <label for="notes">Additional Notes:</label><br>
+    <textarea id="notes" name="notes" rows="4" cols="40" placeholder="Special requests, delivery instructions, etc."></textarea><br><br>
+
+    <button type="submit" style="color: antiquewhite; background-color: black;">Submit Order</button>
+  </form>
+
+    </center>
+</body>
+</html>

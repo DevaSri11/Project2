@@ -1,0 +1,27 @@
+
+header{
+    background-color: black;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 60px;
+}
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    display: inline-block;
+    font-size: x-large;
+}
+
+.cart{
+    font-size: xx-large;
+    color: antiquewhite;
+}
+section{
+    font-size: xx-large;
+}
+body{
+    background-image: url(https://img.freepik.com/premium-photo/music-image-background-wallpaper_573563-4689.jpg?semt=ais_hybrid&w=740);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+

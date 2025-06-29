@@ -1,0 +1,2301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Add To Cartport" content="width=device-width, initial-scale=1.0">
+    <title>Instruments</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Mea+Culpa&family=Nova+Square&family=Orbitron:wght@400..900&family=Special+Elite&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        
+        .holygrail{
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "sidebar main main";
+            grid-template-columns: 200px 2fr 300px;
+            grid-template-rows: 40px 1000px 300px;
+            gap: 10px;
+            height: 100vh;
+        }
+        header{
+            grid-area: header;
+            color: antiquewhite;
+            background-color: black;
+            text-align: center;
+            font-size: 500%;
+            font-weight: 900;
+        }
+        aside{
+            grid-area: sidebar;
+            width: 300px;
+            padding-top: 50px;
+        }
+        main{
+            grid-area: main;
+            padding-top: 50px;
+        }
+        body{
+            background-color: #030637;
+            background-repeat: no-repeat;
+        }
+        a{
+            text-decoration: none;
+            color: antiquewhite;
+            font-size: x-large;
+        }
+        .card{
+            margin-left: 50px;
+        }
+        aside{
+            margin-left: 30px;
+        }
+        .card-container{
+            display: flex;
+            margin-left: 150px;
+        }
+        .card:hover{
+            transform: translateY(-10px);
+        }
+        .btn{
+            background-color: aliceblue;
+            color: black;
+        }
+        .alert{
+            background-color: rgba(97, 207, 122, 0.2);
+            padding: 2px; border-radius: 5px;text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header style="font-family: Arial, Helvetica, sans-serif; padding: 10px;">Categories</header>
+    <nav class="navbar navbar-expand-lg" style="padding: 18px; font-size: xx-large;background-color: rgba(255, 255, 255, 0.2);">
+    <div class="container-fluid">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="brands.html">Brands</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="categories.html">Categories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="order.html">Order</a>
+        </li>
+        <div class="container-fluid" style="margin-left: 1300px;">
+      <button class="btn btn-outline-danger position-relative" type="button" style="width: 90px; height: 65px; margin-left: 5px; font-size: xx-large; padding: 8px;">
+        ❤️
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            <span id="wishlist-count">0</span>
+            <span class="visually-hidden">items in wishlist</span>
+      </span>
+       </button>
+        <button class="btn btn-primary position-relative" type="button" style="width: 120px;  height: 65px;margin-left: 40px; font-size: xx-large;padding: 8px;">Cart
+
+    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+          
+        <span id="count">0</span>
+        <span class="visually-hidden">items in cart</span>
+        </span>
+      
+  </div>
+      
+
+      </ul>
+    </div>
+  </div>
+
+</nav><br>
+
+    <div class="holygrail">
+        <aside>
+            <div><a href="#g">Guitar</a></div><br>
+            <div><a href="#k">Keyboards & Pianos</a></div><br>
+            <div><a href="#d">Drums & Percussion</a></div><br>
+            <div><a href="#w">Wind Instruments</a></div><br>
+            <div><a href="#s">String Instruments (violins, cellos, etc.)</a></div><br>
+            <div><a href="#m">Studio Equipment (microphones, mixers, etc.)</a></div><br>
+            <div><a href="#ac">Accessories (cases, strings, stands)</a></div><br>
+        </aside>
+        <main>
+            <div class="card-container">
+                <div class="card" style="width: 18rem;" id="g">
+                    <img src="https://cdn.shopify.com/s/files/1/0657/6821/files/jackson-electric-guitars-black-jackson-js11-dinky-6-string-electric-guitar-33621848817843_200x.jpg?v=1742047380" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Guitar S-40</h5>
+                        <p class="card-text">Elegant and Premium.</p><br><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#productDetails" >Add To Cart</a>
+                    </div>
+                </div>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="productDetails" aria-labelledby="productDetailsLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="productDetailsLabel">🛒 Guitar S-40</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <div class="d-flex mb-3">
+                        <img src="https://cdn.shopify.com/s/files/1/0657/6821/files/jackson-electric-guitars-black-jackson-js11-dinky-6-string-electric-guitar-33621848817843_200x.jpg?v=1742047380" style="width: 80px; height: auto;" class="me-3" alt="Guitar S-40">
+                        <div>
+                            <h6>Guitar S-40</h6>
+                            <p class="mb-0">Qty: 1</p>
+                            <p class="text-danger mb-0">You Pay ₹12,999 <small class="text-muted" style="text-decoration: line-through;">₹15,499</small></p>
+                        </div>
+                        </div>
+
+                        <div class="mb-3">
+                        <h6>Specifications</h6>
+                        <ul class="list-unstyled small mb-0">
+                            <li><strong>Body Material:</strong> Mahogany</li>
+                            <li><strong>Neck Material:</strong> Maple</li>
+                            <li><strong>Fretboard:</strong> Rosewood, 22 Frets</li>
+                            <li><strong>Pickups:</strong> Humbucker</li>
+                            <li><strong>Bridge:</strong> Fixed Bridge</li>
+                            <li><strong>Finish:</strong> Gloss Black</li>
+                        </ul>
+                        </div>
+
+                        <h6 class="mt-4">Price Summary</h6>
+                        <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹15,499</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Discount <span class="text-success">-₹2,500</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹12,999</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Delivery <span class="text-success">Free</span></li>
+                        <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹12,999</span></li>
+                        </ul>
+
+                        <div class="mt-4 d-flex justify-content-around text-center">
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;">
+                            <p>Genuine<br>products</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;">
+                            <p>Secure<br>payments</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;">
+                            <p>Easy<br>returns</p>
+                        </div>
+                        </div>
+
+                        <div class="alert">
+                        🎉 You saved ₹2,500 on this purchase
+                        </div>
+
+                        <div class="mt-4 text-center">
+                        <button class="btn btn-success w-100">Proceed to Buy</button>
+                        </div>
+                    </div>
+                    </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.bajaao.com/cdn/shop/files/FEN-0140550515_1024x1024.jpg?v=1727152953" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fender Player II Telecaster</h5>
+                        <p class="card-text">Classic 6-string electric guitar.</p><br><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasFenderTele" >Add To Cart</a>
+                    </div>
+                </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasFenderTele" aria-labelledby="cartOffcanvasFenderTeleLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="cartOffcanvasFenderTeleLabel">🛒 Fender Player II Telecaster</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <div class="d-flex mb-3">
+                        <img src="https://www.bajaao.com/cdn/shop/files/FEN-0140550515_1024x1024.jpg?v=1727152953" style="width: 80px; height: auto;" class="me-3" alt="Fender Player II Telecaster">
+                        <div>
+                            <h6>Fender Player II Telecaster</h6>
+                            <p class="mb-0">Qty: 1</p>
+                            <p class="text-danger mb-0">You Pay ₹20,999 <small class="text-muted" style="text-decoration: line-through;">₹22,500</small></p>
+                        </div>
+                        </div>
+
+                        <div class="mb-3">
+                        <h6 class="fw-bold">Specifications</h6>
+                        <ul class="list-unstyled mb-0 small">
+                            <li><strong>Body Material:</strong> Alder</li>
+                            <li><strong>Neck Material:</strong> Maple</li>
+                            <li><strong>Fretboard:</strong> Maple, 22 Frets</li>
+                            <li><strong>Pickups:</strong> Player Series Single-Coil Telecaster</li>
+                            <li><strong>Bridge:</strong> 6-Saddle String-Through-Body Tele</li>
+                            <li><strong>Finish:</strong> Gloss Polyester</li>
+                        </ul>
+                        </div>
+
+                        <h6 class="mt-4">Price Summary</h6>
+                        <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹22,500</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Discount <span class="text-success">-₹1,501</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹20,999</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Delivery <span class="text-success">Free</span></li>
+                        <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹20,999</span></li>
+                        </ul>
+
+                        <div class="mt-4 d-flex justify-content-around text-center">
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;">
+                            <p>Genuine<br>products</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;">
+                            <p>Secure<br>payments</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;">
+                            <p>Easy<br>returns</p>
+                        </div>
+                        </div>
+
+                        <div class="alert">
+                        🎉 You saved ₹1,501 on this purchase
+                        </div>
+
+                        <div class="mt-4 text-center">
+                        <button class="btn btn-success w-100">Proceed to Buy</button>
+                        </div>
+                    </div>
+                    </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.bajaao.com/cdn/shop/files/fender-electric-guitars-black-maple-fender-player-lead-ii-6-string-electric-guitar-33520683188403_1024x1024.jpg?v=1693471172" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fender Player Lead II</h5>
+                        <p class="card-text">Iconic & Bright tone and versatility.</p><br><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart"  data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasPlayerLeadII"  >Add To Cart</a>
+                    </div>
+                </div>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasPlayerLeadII" aria-labelledby="cartOffcanvasPlayerLeadIILabel">
+                <div class="offcanvas-header">
+                    <h5 id="cartOffcanvasPlayerLeadIILabel">🛒 Fender Player Lead II</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    <div class="d-flex mb-3">
+                    <img src="https://www.bajaao.com/cdn/shop/files/fender-electric-guitars-black-maple-fender-player-lead-ii-6-string-electric-guitar-33520683188403_1024x1024.jpg?v=1693471172" style="width: 80px; height: auto;" class="me-3" alt="Fender Player Lead II">
+                    <div>
+                        <h6>Fender Player Lead II</h6>
+                        <p class="mb-0">Qty: 1</p>
+                        <p class="text-danger mb-0">You Pay ₹19,499 <small class="text-muted" style="text-decoration: line-through;">₹20,700</small></p>
+                    </div>
+                    </div>
+
+                    <div class="mb-3">
+                    <h6 class="fw-bold">Specifications</h6>
+                    <ul class="list-unstyled mb-0 small">
+                        <li><strong>Body Material:</strong> Alder</li>
+                        <li><strong>Neck Material:</strong> Maple</li>
+                        <li><strong>Fretboard:</strong> Maple, 22 Frets</li>
+                        <li><strong>Pickups:</strong> 2x Player Series Single-Coil</li>
+                        <li><strong>Bridge:</strong> 6-Saddle String-Through-Body</li>
+                        <li><strong>Finish:</strong> Satin Polyester</li>
+                    </ul>
+                    </div>
+
+                    <h6 class="mt-4">Price Summary</h6>
+                    <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹20,700</span></li>
+                    <li class="list-group-item d-flex justify-content-between">Discount <span class="text-success">-₹1,201</span></li>
+                    <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹19,499</span></li>
+                    <li class="list-group-item d-flex justify-content-between">Delivery <span class="text-success">Free</span></li>
+                    <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹19,499</span></li>
+                    </ul>
+
+                    <div class="mt-4 d-flex justify-content-around text-center">
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;">
+                        <p>Genuine<br>products</p>
+                    </div>
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;">
+                        <p>Secure<br>payments</p>
+                    </div>
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;">
+                        <p>Easy<br>returns</p>
+                    </div>
+                    </div>
+
+                    <div class="alert">
+                    🎉 You saved ₹1,201 on this purchase
+                    </div>
+
+                    <div class="mt-4 text-center">
+                    <button class="btn btn-success w-100">Proceed to Buy</button>
+                    </div>
+                </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.bajaao.com/cdn/shop/files/FEN-0140480500_1024x1024.jpg?v=1727162106" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Fender Player II Jazz 4</h5>
+                        <p class="card-text">Legendary electric guitar with warm tones and exceptional sustain.</p><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart"  data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasJazz4" >Add To Cart</a>
+                    </div>
+                </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasJazz4" aria-labelledby="cartOffcanvasJazz4Label">
+                    <div class="offcanvas-header">
+                        <h5 id="cartOffcanvasJazz4Label">🛒 Fender Player II Jazz 4</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <div class="d-flex mb-3">
+                        <img src="https://www.bajaao.com/cdn/shop/files/FEN-0140480500_1024x1024.jpg?v=1727162106" style="width: 80px; height: auto;" class="me-3" alt="Fender Player II Jazz 4">
+                        <div>
+                            <h6>Fender Player II Jazz 4</h6>
+                            <p class="mb-0">Qty: 1</p>
+                            <p class="text-danger mb-0">You Pay ₹13,775 <small class="text-muted" style="text-decoration: line-through;">₹14,500</small></p>
+                        </div>
+                        </div>
+
+                        <div class="mb-3">
+                        <h6 class="fw-bold">Specifications</h6>
+                        <ul class="list-unstyled mb-0 small">
+                            <li><strong>Body Material:</strong> Alder</li>
+                            <li><strong>Neck Material:</strong> Maple</li>
+                            <li><strong>Fretboard:</strong> Pau Ferro, 20 Frets</li>
+                            <li><strong>Pickups:</strong> 2x Player Series Single-Coil Jazz Bass</li>
+                            <li><strong>Bridge:</strong> 4-Saddle Standard</li>
+                            <li><strong>Finish:</strong> Gloss Polyester</li>
+                        </ul>
+                        </div>
+
+                        <h6 class="mt-4">Price Summary</h6>
+                        <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹14,500</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Discount <span class="text-success">-₹725</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹13,775</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Delivery <span class="text-success">Free</span></li>
+                        <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹13,775</span></li>
+                        </ul>
+
+                        <div class="mt-4 d-flex justify-content-around text-center">
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;">
+                            <p>Genuine<br>products</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;">
+                            <p>Secure<br>payments</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;">
+                            <p>Easy<br>returns</p>
+                        </div>
+                        </div>
+
+                        <div class="alert">
+                        🎉 You saved ₹725 on this purchase
+                        </div>
+
+                        <div class="mt-4 text-center">
+                        <button class="btn btn-success w-100">Proceed to Buy</button>
+                        </div>
+                    </div>
+                    </div>
+
+            </div><br>
+            <div class="card-container">
+                <div class="card" style="width: 18rem;" id="k">
+                    <img src="https://static.roland.com/assets/images/products/main/gp-9m_angle_open_tn.jpg" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">GP-9M Keyboard</h5>
+                        <p class="card-text">Premium quality Keyboard.</p><br><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="##" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasGP9M" >Add To Cart</a>
+                    </div>
+                </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasGP9M" aria-labelledby="cartOffcanvasGP9MLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="cartOffcanvasGP9MLabel">🛒 GP-9M Keyboard</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <div class="d-flex mb-3">
+                        <img src="https://static.roland.com/assets/images/products/main/gp-9m_angle_open_tn.jpg" height="80" class="me-3" alt="GP-9M Keyboard">
+                        <div>
+                            <h6>GP-9M Keyboard</h6>
+                            <p class="mb-0">Qty: 1</p>
+                            <p class="text-danger mb-0">You Pay ₹1,25,000 <small class="text-muted" style="text-decoration: line-through;">₹1,32,980</small></p>
+                        </div>
+                        </div>
+
+                        <div class="mb-3">
+                        <h6 class="fw-bold">Product Specifications</h6><br>
+                        <ul class="list-unstyled mb-0 small">
+                            <li><strong>Type:</strong> Digital Grand Piano</li>
+                            <li><strong>Keys:</strong> 88 Weighted Keys</li>
+                            <li><strong>Sound Engine:</strong> SuperNATURAL Piano Technology</li>
+                            <li><strong>Polyphony:</strong> 256 Voices</li>
+                            <li><strong>Connectivity:</strong> USB, MIDI, Audio Out</li>
+                            <li><strong>Finish:</strong> Polished Ebony</li>
+                        </ul>
+                        </div>
+
+                        <h6 class="mt-4">Price Summary</h6><br>
+                        <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹1,32,980</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Discount <span class="text-success">-₹7,980</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹1,25,000</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Delivery <span class="text-success">Free</span></li>
+                        <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹1,25,000</span></li>
+                        </ul>
+
+                        <div class="mt-4 d-flex justify-content-around text-center">
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;" alt="Genuine products">
+                            <p>Genuine<br>products</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;" alt="Secure payments">
+                            <p>Secure<br>payments</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;" alt="Easy returns">
+                            <p>Easy<br>returns</p>
+                        </div>
+                        </div>
+
+                        <div class="alert">
+                        🎉 You saved ₹7,980 on this purchase
+                        </div>
+
+                        <div class="mt-4 text-center">
+                        <button class="btn btn-success w-100">Proceed to Buy</button>
+                        </div>
+                    </div>
+                    </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://static.roland.com/assets/images/products/main/e-x50_top_tn.jpg" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">E-X50 Arranger Keyboard</h5>
+                        <p class="card-text">Powerful Entertainent Keyboard.</p><br><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasEX50" >Add To Cart</a>
+                    </div>
+                </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasEX50" aria-labelledby="cartOffcanvasEX50Label">
+                    <div class="offcanvas-header">
+                        <h5 id="cartOffcanvasEX50Label">🛒 E-X50 Arranger Keyboard</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                     
+                        <div class="d-flex mb-3">
+                        <img src="https://static.roland.com/assets/images/products/main/e-x50_top_tn.jpg" height="80" class="me-3" alt="E-X50 Keyboard">
+                        <div>
+                            <h6>E-X50 Arranger Keyboard</h6>
+                            <p class="mb-0">Qty: 1</p>
+                            <p class="text-danger mb-0">You Pay ₹32,500 <small class="text-muted" style="text-decoration: line-through;">₹36,900</small></p>
+                        </div>
+                        </div>
+
+                        
+                        <div class="mb-3">
+                        <h6 class="fw-bold">Product Specifications</h6><br>
+                        <ul class="list-unstyled mb-0 small">
+                            <li><strong>Type:</strong> Entertainment Arranger Keyboard</li>
+                            <li><strong>Keys:</strong> 61 Velocity-Sensitive Keys</li>
+                            <li><strong>Sound Engine:</strong> Roland High-Quality PCM</li>
+                            <li><strong>Speakers:</strong> Built-in Stereo Speakers</li>
+                            <li><strong>Connectivity:</strong> USB, Audio In/Out, Bluetooth</li>
+                            <li><strong>Weight:</strong> 5.3 kg (Approx)</li>
+                        </ul>
+                        </div>
+
+                        
+                        <h6 class="mt-4">Price Summary</h6><br>
+                        <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹36,900</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Discount <span class="text-success">-₹4,400</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹32,500</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Delivery <span class="text-success">Free</span></li>
+                        <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹32,500</span></li>
+                        </ul>
+
+                       
+                        <div class="mt-4 d-flex justify-content-around text-center">
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;" alt="Genuine products">
+                            <p>Genuine<br>products</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;" alt="Secure payments">
+                            <p>Secure<br>payments</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;" alt="Easy returns">
+                            <p>Easy<br>returns</p>
+                        </div>
+                        </div>
+
+                        
+                        <div class="alert">
+                        🎉 You saved ₹4,400 on this purchase
+                        </div>
+
+                     
+                        <div class="mt-4 text-center">
+                        <button class="btn btn-success w-100">Proceed to Buy</button>
+                        </div>
+                    </div>
+                    </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://static.roland.com/assets/images/products/main/gokeys_3-mu_top_tn.jpg" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">GO:KEYS 3</h5>
+                        <p class="card-text">Roland ZEN-CORE Sounds.</p><br><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasGoKeys3" >Add To Cart</a>
+                    </div>
+                </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasGoKeys3" aria-labelledby="cartOffcanvasGoKeys3Label">
+                    <div class="offcanvas-header">
+                        <h5 id="cartOffcanvasGoKeys3Label">🛒 GO:KEYS 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        
+                        <div class="d-flex mb-3">
+                        <img src="https://static.roland.com/assets/images/products/main/gokeys_3-mu_top_tn.jpg" height="80" class="me-3" alt="GO:KEYS 3">
+                        <div>
+                            <h6>GO:KEYS 3 Keyboard</h6>
+                            <p class="mb-0">Qty: 1</p>
+                            <p class="text-danger mb-0">You Pay ₹29,900 <small class="text-muted" style="text-decoration: line-through;">₹33,000</small></p>
+                        </div>
+                        </div>
+
+
+                        <div class="mb-3">
+                        <h6 class="fw-bold">Product Specifications</h6><br>
+                        <ul class="list-unstyled mb-0 small">
+                            <li><strong>Type:</strong> Portable Music Creation Keyboard</li>
+                            <li><strong>Keys:</strong> 61 Velocity-Sensitive Keys</li>
+                            <li><strong>Sound Engine:</strong> ZEN-Core</li>
+                            <li><strong>Presets:</strong> 1000+ Tones, 200+ Rhythms</li>
+                            <li><strong>Connectivity:</strong> Bluetooth, USB-C, Audio In/Out</li>
+                            <li><strong>Power:</strong> Battery or AC Adapter</li>
+                        </ul>
+                        </div>
+
+                        
+                        <h6 class="mt-4">Price Summary</h6><br>
+                        <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹33,000</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Discount <span class="text-success">-₹3,100</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹29,900</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Delivery <span class="text-success">Free</span></li>
+                        <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹29,900</span></li>
+                        </ul>
+
+                        
+                        <div class="mt-4 d-flex justify-content-around text-center">
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;" alt="Genuine products">
+                            <p>Genuine<br>products</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;" alt="Secure payments">
+                            <p>Secure<br>payments</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;" alt="Easy returns">
+                            <p>Easy<br>returns</p>
+                        </div>
+                        </div>
+
+                    
+                        <div class="alert">
+                        🎉 You saved ₹3,100 on this purchase
+                        </div>
+
+                    
+                        <div class="mt-4 text-center">
+                        <button class="btn btn-success w-100">Proceed to Buy</button>
+                        </div>
+                    </div>
+                    </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://static.roland.com/assets/images/products/main/lx-5-la_angle_left_tn.jpg" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">LX-5 </h5>
+                        <p class="card-text">Advanced Upright Piano.</p><br><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasLX5" >Add To Cart</a> 
+                    </div>
+                </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasLX5" aria-labelledby="cartOffcanvasLX5Label">
+                    <div class="offcanvas-header">
+                        <h5 id="cartOffcanvasLX5Label">🛒 LX-5 Upright Piano</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                    
+                        <div class="d-flex mb-3">
+                        <img src="https://static.roland.com/assets/images/products/main/lx-5-la_angle_left_tn.jpg" height="80" class="me-3" alt="LX-5 Piano">
+                        <div>
+                            <h6>LX-5 Upright Piano</h6>
+                            <p class="mb-0">Qty: 1</p>
+                            <p class="text-danger mb-0">You Pay ₹89,999 <small class="text-muted" style="text-decoration: line-through;">₹97,000</small></p>
+                        </div>
+                        </div>
+
+                       
+                        <div class="mb-3">
+                        <h6 class="fw-bold">Product Specifications</h6><br>
+                        <ul class="list-unstyled mb-0 small">
+                            <li><strong>Type:</strong> Advanced Digital Upright Piano</li>
+                            <li><strong>Keys:</strong> 88 Weighted Hammer-Action Keys</li>
+                            <li><strong>Sound Engine:</strong> PureAcoustic Piano Modeling</li>
+                            <li><strong>Speakers:</strong> Acoustic Projection System</li>
+                            <li><strong>Finish:</strong> Luxury Polished Ebony / Light Oak</li>
+                            <li><strong>Bluetooth:</strong> MIDI & Audio Support</li>
+                        </ul>
+                        </div>
+
+
+                        <h6 class="mt-4">Price Summary</h6><br>
+                        <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹97,000</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Discount <span class="text-success">-₹7,001</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹89,999</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Delivery <span class="text-success">Free</span></li>
+                        <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹89,999</span></li>
+                        </ul>
+
+                       
+                        <div class="mt-4 d-flex justify-content-around text-center">
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;" alt="Genuine products">
+                            <p>Genuine<br>products</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;" alt="Secure payments">
+                            <p>Secure<br>payments</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;" alt="Easy returns">
+                            <p>Easy<br>returns</p>
+                        </div>
+                        </div>
+
+                     
+                        <div class="alert">
+                        🎉 You saved ₹7,001 on this purchase
+                        </div>
+
+                     
+                        <div class="mt-4 text-center">
+                        <button class="btn btn-success w-100">Proceed to Buy</button>
+                        </div>
+                    </div>
+                    </div>
+
+
+            </div><br>
+                <nav aria-label="Page navigation example" style="margin-left: 770px;">
+                    <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav><br>
+            <div class="card-container">
+                <div class="card" style="width: 18rem;" id="d">
+                    <img src="https://static.roland.com/assets/images/products/main/kdq-8_angle_tn.jpg" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">KDQ-8</h5>
+                        <p class="card-text">Kick Drum Pad and Beater.</p><br><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart"  data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasKDQ8" >Add To Cart</a>
+                    </div>
+                </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasKDQ8" aria-labelledby="cartOffcanvasKDQ8Label">
+                    <div class="offcanvas-header">
+                        <h5 id="cartOffcanvasKDQ8Label">🛒 KDQ-8 Kick Drum Pad</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        
+                        <div class="d-flex mb-3">
+                        <img src="https://static.roland.com/assets/images/products/main/kdq-8_angle_tn.jpg" height="80" class="me-3" alt="KDQ-8">
+                        <div>
+                            <h6>KDQ-8 Kick Drum Pad</h6>
+                            <p class="mb-0">Qty: 1</p>
+                            <p class="text-danger mb-0">You Pay ₹13,500 <small class="text-muted" style="text-decoration: line-through;">₹15,200</small></p>
+                        </div>
+                        </div>
+
+                       
+                        <div class="mb-3">
+                        <h6 class="fw-bold">Product Specifications</h6><br>
+                        <ul class="list-unstyled mb-0 small">
+                            <li><strong>Type:</strong> Kick Drum Trigger Pad</li>
+                            <li><strong>Compatibility:</strong> V-Drums Modules</li>
+                            <li><strong>Includes:</strong> Beater and Trigger Input Cable</li>
+                            <li><strong>Design:</strong> Compact and Durable</li>
+                            <li><strong>Mounting:</strong> Standard Kick Pedal Clamp</li>
+                        </ul>
+                        </div>
+
+                        
+                        <h6 class="mt-4">Price Summary</h6><br>
+                        <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹15,200</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Discount <span class="text-success">-₹1,700</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹13,500</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Delivery <span class="text-success">Free</span></li>
+                        <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹13,500</span></li>
+                        </ul>
+
+                      
+                        <div class="mt-4 d-flex justify-content-around text-center">
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;" alt="Genuine products">
+                            <p>Genuine<br>products</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;" alt="Secure payments">
+                            <p>Secure<br>payments</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;" alt="Easy returns">
+                            <p>Easy<br>returns</p>
+                        </div>
+                        </div>
+
+
+                        <div class="alert">
+                        🎉 You saved ₹1,700 on this purchase
+                        </div>
+
+                        
+                        <div class="mt-4 text-center">
+                        <button class="btn btn-success w-100">Proceed to Buy</button>
+                        </div>
+                    </div>
+                    </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://static.roland.com/assets/images/products/main/vad103_front_tn.jpg" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">VAD 307</h5>
+                        <p class="card-text">Revolutionary Electric Drum Kit.</p><br><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasVAD307" >Add To Cart</a>
+                    </div>
+                </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasVAD307" aria-labelledby="cartOffcanvasVAD307Label">
+                    <div class="offcanvas-header">
+                        <h5 id="cartOffcanvasVAD307Label">🛒 VAD 307 Drum Kit</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                       
+                        <div class="d-flex mb-3">
+                        <img src="https://static.roland.com/assets/images/products/main/vad103_front_tn.jpg" height="80" class="me-3" alt="VAD 307">
+                        <div>
+                            <h6>VAD 307 Drum Kit</h6>
+                            <p class="mb-0">Qty: 1</p>
+                            <p class="text-danger mb-0">You Pay ₹1,85,000 <small class="text-muted" style="text-decoration: line-through;">₹1,99,999</small></p>
+                        </div>
+                        </div>
+
+                    
+                        <div class="mb-3">
+                        <h6 class="fw-bold">Product Specifications</h6><br>
+                        <ul class="list-unstyled mb-0 small">
+                            <li><strong>Type:</strong> Full-Size Electronic Drum Kit</li>
+                            <li><strong>Module:</strong> TD-17 Sound Engine</li>
+                            <li><strong>Pads:</strong> Dual-Mesh Snare & Toms, V-Cymbals</li>
+                            <li><strong>Kick:</strong> Real Wood Shell Kick Pad</li>
+                            <li><strong>Connectivity:</strong> Bluetooth, USB, MIDI</li>
+                            <li><strong>Design:</strong> Acoustic Look with Electronic Versatility</li>
+                        </ul>
+                        </div>
+
+                  
+                        <h6 class="mt-4">Price Summary</h6><br>
+                        <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹1,99,999</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Discount <span class="text-success">-₹14,999</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹1,85,000</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Delivery <span class="text-success">Free</span></li>
+                        <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹1,85,000</span></li>
+                        </ul>
+
+                     
+                        <div class="mt-4 d-flex justify-content-around text-center">
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;" alt="Genuine products">
+                            <p>Genuine<br>products</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;" alt="Secure payments">
+                            <p>Secure<br>payments</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;" alt="Easy returns">
+                            <p>Easy<br>returns</p>
+                        </div>
+                        </div>
+
+                       
+                        <div class="alert">
+                        🎉 You saved ₹14,999 on this purchase
+                        </div>
+
+                     
+                        <div class="mt-4 text-center">
+                        <button class="btn btn-success w-100">Proceed to Buy</button>
+                        </div>
+                    </div>
+                    </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://static.roland.com/assets/images/products/main/td-17kvx_angle_1_tn.jpg" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">TD-17 Series V-Drums</h5>
+                        <p class="card-text">Become a better drummer faster.</p><br><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasTD17" >Add To Cart</a>
+                    </div>
+                </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasTD17" aria-labelledby="cartOffcanvasTD17Label">
+                    <div class="offcanvas-header">
+                        <h5 id="cartOffcanvasTD17Label">🛒 TD-17 Series V-Drums</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                      
+                        <div class="d-flex mb-3">
+                        <img src="https://static.roland.com/assets/images/products/main/td-17kvx_angle_1_tn.jpg" height="80" class="me-3" alt="TD-17 V-Drums">
+                        <div>
+                            <h6>TD-17 Series V-Drums</h6>
+                            <p class="mb-0">Qty: 1</p>
+                            <p class="text-danger mb-0">You Pay ₹98,000 <small class="text-muted" style="text-decoration: line-through;">₹1,07,500</small></p>
+                        </div>
+                        </div>
+
+                        
+                        <div class="mb-3">
+                        <h6 class="fw-bold">Product Specifications</h6><br>
+                        <ul class="list-unstyled mb-0 small">
+                            <li><strong>Type:</strong> Electronic Drum Kit</li>
+                            <li><strong>Module:</strong> TD-17 Sound Engine</li>
+                            <li><strong>Snare:</strong> PDX-12 Dual-Trigger Mesh Pad</li>
+                            <li><strong>Hi-Hat:</strong> VH-10 with Stand Mount</li>
+                            <li><strong>Connectivity:</strong> Bluetooth, USB, Audio Out</li>
+                            <li><strong>Practice Tools:</strong> Coach Mode, Onboard Songs</li>
+                        </ul>
+                        </div>
+
+                    
+                        <h6 class="mt-4">Price Summary</h6><br>
+                        <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹1,07,500</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Discount <span class="text-success">-₹9,500</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹98,000</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Delivery <span class="text-success">Free</span></li>
+                        <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹98,000</span></li>
+                        </ul>
+
+                      
+                        <div class="mt-4 d-flex justify-content-around text-center">
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;" alt="Genuine products">
+                            <p>Genuine<br>products</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;" alt="Secure payments">
+                            <p>Secure<br>payments</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;" alt="Easy returns">
+                            <p>Easy<br>returns</p>
+                        </div>
+                        </div>
+
+                       
+                        <div class="alert">
+                        🎉 You saved ₹9,500 on this purchase
+                        </div>
+
+                    
+                        <div class="mt-4 text-center">
+                        <button class="btn btn-success w-100">Proceed to Buy</button>
+                        </div>
+                    </div>
+                    </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://static.roland.com/assets/images/products/main/td-02k_front_tn.jpg" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">TD-02K </h5>
+                        <p class="card-text">High quality electronic drum kit.</p><br><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasTD02K" >Add To Cart</a>
+                    </div>
+                </div>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasTD02K" aria-labelledby="cartOffcanvasTD02KLabel">
+                <div class="offcanvas-header">
+                    <h5 id="cartOffcanvasTD02KLabel">🛒 TD-02K Electronic Drum Kit</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+
+                <div class="offcanvas-body">
+                    
+                    <div class="d-flex mb-3">
+                    <img src="https://static.roland.com/assets/images/products/main/td-02k_front_tn.jpg" height="80" class="me-3" alt="TD-02K">
+                    <div>
+                        <h6>TD-02K Electronic Drum Kit</h6>
+                        <p class="mb-0">Qty: 1</p>
+                        <p class="text-danger mb-0">You Pay ₹38,990 <small class="text-muted" style="text-decoration: line-through;">₹42,500</small></p>
+                    </div>
+                    </div>
+
+                    
+                    <div class="mb-3">
+                    <h6 class="fw-bold">Product Specifications</h6><br>
+                    <ul class="list-unstyled mb-0 small">
+                        <li><strong>Type:</strong> Compact Electronic Drum Kit</li>
+                        <li><strong>Module:</strong> TD-02 Sound Engine</li>
+                        <li><strong>Pads:</strong> Mesh-Head Snare, Rubber Toms</li>
+                        <li><strong>Pedals:</strong> Integrated Kick & Hi-Hat Pedals</li>
+                        <li><strong>Connectivity:</strong> USB MIDI, Headphone Out</li>
+                        <li><strong>Practice Tools:</strong> Metronome, Coach Mode</li>
+                    </ul>
+                    </div>
+
+                
+                    <h6 class="mt-4">Price Summary</h6><br>
+                    <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹42,500</span></li>
+                    <li class="list-group-item d-flex justify-content-between">Discount <span class="text-success">-₹3,510</span></li>
+                    <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹38,990</span></li>
+                    <li class="list-group-item d-flex justify-content-between">Delivery <span class="text-success">Free</span></li>
+                    <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹38,990</span></li>
+                    </ul>
+
+              
+                    <div class="mt-4 d-flex justify-content-around text-center">
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;" alt="Genuine products">
+                        <p>Genuine<br>products</p>
+                    </div>
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;" alt="Secure payments">
+                        <p>Secure<br>payments</p>
+                    </div>
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;" alt="Easy returns">
+                        <p>Easy<br>returns</p>
+                    </div>
+                    </div>
+
+                   
+                    <div class="alert">
+                    🎉 You saved ₹3,510 on this purchase
+                    </div>
+
+               
+                    <div class="mt-4 text-center">
+                    <button class="btn btn-success w-100">Proceed to Buy</button>
+                    </div>
+                </div>
+                </div>
+
+
+            </div><br>
+                
+            <div class="card-container">
+                <div class="card" style="width: 18rem;" id="w">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZbluw3JuZb-RVY6JYI8qY1I1htJjM9tAZ2w&s" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Aerophone mini</h5>
+                        <p class="card-text">Premium quality and Handy.</p><br><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasAerophoneMini"  >Add To Cart</a>
+                    </div>
+                </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasAerophoneMini" aria-labelledby="cartOffcanvasAerophoneMiniLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="cartOffcanvasAerophoneMiniLabel">🛒 Aerophone mini</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <div class="d-flex mb-3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZbluw3JuZb-RVY6JYI8qY1I1htJjM9tAZ2w&s" height="80" class="me-3" alt="Aerophone mini">
+                        <div>
+                            <h6>Aerophone mini</h6>
+                            <p class="mb-0">Qty: 1</p>
+                            <p class="text-danger mb-0">You Pay ₹28,999 <small class="text-muted" style="text-decoration: line-through;">₹31,876</small></p>
+                        </div>
+                        </div>
+
+                        <div class="mb-3">
+                        <h6 class="fw-bold">Specifications</h6>
+                        <ul class="list-unstyled mb-0 small">
+                            <li><strong>Type:</strong> Digital Wind Instrument</li>
+                            <li><strong>Sound Engine:</strong> Advanced Tone Modeling</li>
+                            <li><strong>Polyphony:</strong> 128 Voices</li>
+                            <li><strong>Connectivity:</strong> Bluetooth MIDI, USB</li>
+                            <li><strong>Battery Life:</strong> Up to 8 Hours</li>
+                            <li><strong>Weight:</strong> 350g</li>
+                        </ul>
+                        </div>
+
+                        <h6 class="mt-4">Price Summary</h6>
+                        <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹31,876</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Discount <span class="text-success">-₹2,877</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹28,999</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Delivery <span class="text-success">Free</span></li>
+                        <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹28,999</span></li>
+                        </ul>
+
+                        <div class="mt-4 d-flex justify-content-around text-center">
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;">
+                            <p>Genuine<br>products</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;">
+                            <p>Secure<br>payments</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;">
+                            <p>Easy<br>returns</p>
+                        </div>
+                        </div>
+
+                        <div class="alert">
+                        🎉 You saved ₹2,877 on this purchase
+                        </div>
+
+                        <div class="mt-4 text-center">
+                        <button class="btn btn-success w-100">Proceed to Buy</button>
+                        </div>
+                    </div>
+                    </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2O5Lz85xq8f-KCvLkCniqMHaW8wkIWxNxrg&s" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Aerophone AE-20</h5>
+                        <p class="card-text">With advanced sound engines.</p><br><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasAE20" >Add To Cart</a>
+                    </div>
+                </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasAE20" aria-labelledby="cartOffcanvasAE20Label">
+                    <div class="offcanvas-header">
+                        <h5 id="cartOffcanvasAE20Label">🛒 Aerophone AE-20</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="d-flex mb-3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2O5Lz85xq8f-KCvLkCniqMHaW8wkIWxNxrg&s" height="80" class="me-3" alt="Aerophone AE-20">
+                        <div>
+                            <h6>Aerophone AE-20</h6>
+                            <p class="mb-0">Qty: 1</p>
+                            <p class="text-danger mb-0">You Pay ₹28,999 <small class="text-muted" style="text-decoration: line-through;">₹31,876</small></p>
+                        </div>
+                        </div>
+
+                        <h6 class="fw-bold">Specifications</h6>
+                        <ul class="list-unstyled small">
+                        <li><strong>Type:</strong> Digital Wind Instrument</li>
+                        <li><strong>Sound Engine:</strong> Advanced Sound Engines</li>
+                        <li><strong>Polyphony:</strong> 128 Voices</li>
+                        <li><strong>Connectivity:</strong> Bluetooth MIDI, USB</li>
+                        <li><strong>Weight:</strong> 400g</li>
+                        </ul>
+
+                        <h6 class="mt-4">Price Summary</h6>
+                        <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹31,876</span></li>
+                        <li class="list-group-item d-flex justify-content-between text-success">Discount <span>-₹2,877</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹28,999</span></li>
+                        <li class="list-group-item d-flex justify-content-between text-success">Delivery <span>Free</span></li>
+                        <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹28,999</span></li>
+                        </ul>
+
+                        <div class="mt-4 d-flex justify-content-around text-center">
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;">
+                            <p>Genuine<br>products</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;">
+                            <p>Secure<br>payments</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;">
+                            <p>Easy<br>returns</p>
+                        </div>
+                        </div>
+
+                        <div class="alert">
+                        🎉 You saved ₹2,877 on this purchase
+                        </div>
+
+                        <div class="mt-4 text-center">
+                        <button class="btn btn-success w-100">Proceed to Buy</button>
+                        </div>
+                    </div>
+                    </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSqma6udALCYb8R-k865z0ot2ennMCgbdSrRu5LamLm3NJYaogj1aLP1hdpOvXt1tBI_n-07J1iNjNv8tTuOd8MtnJAgMCRojpOfTOdUnAM1YFZnyMu8FfvOA" height="275px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Foxit Flutes</h5>
+                        <p class="card-text">Medium Right Hand Bansuri 18.5 inches.</p><br><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasFoxit" >Add To Cart</a>
+                    </div>
+                </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasFoxit" aria-labelledby="cartOffcanvasFoxitLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="cartOffcanvasFoxitLabel">🛒 Foxit Flutes</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="d-flex mb-3">
+                        <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSqma6udALCYb8R-k865z0ot2ennMCgbdSrRu5LamLm3NJYaogj1aLP1hdpOvXt1tBI_n-07J1iNjNv8tTuOd8MtnJAgMCRojpOfTOdUnAM1YFZnyMu8FfvOA" height="80" class="me-3" alt="Foxit Flutes">
+                        <div>
+                            <h6>Foxit Flutes</h6>
+                            <p class="mb-0">Qty: 1</p>
+                            <p class="text-danger mb-0">You Pay ₹2,799 <small class="text-muted" style="text-decoration: line-through;">₹3,000</small></p>
+                        </div>
+                        </div>
+
+                        <h6 class="fw-bold">Specifications</h6>
+                        <ul class="list-unstyled small">
+                        <li><strong>Type:</strong> Bansuri Flute</li>
+                        <li><strong>Material:</strong> Bamboo</li>
+                        <li><strong>Length:</strong> 18.5 inches</li>
+                        <li><strong>Hand:</strong> Right Hand Medium</li>
+                        <li><strong>Origin:</strong> Handmade in India</li>
+                        </ul>
+
+                        <h6 class="mt-4">Price Summary</h6>
+                        <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹3,000</span></li>
+                        <li class="list-group-item d-flex justify-content-between text-success">Discount <span>-₹201</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹2,799</span></li>
+                        <li class="list-group-item d-flex justify-content-between text-success">Delivery <span>Free</span></li>
+                        <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹2,799</span></li>
+                        </ul>
+
+                        <div class="mt-4 d-flex justify-content-around text-center">
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;">
+                            <p>Genuine<br>products</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;">
+                            <p>Secure<br>payments</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;">
+                            <p>Easy<br>returns</p>
+                        </div>
+                        </div>
+
+                        <div class="alert">
+                        🎉 You saved ₹201 on this purchase
+                        </div>
+
+                        <div class="mt-4 text-center">
+                        <button class="btn btn-success w-100">Proceed to Buy</button>
+                        </div>
+                    </div>
+                    </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRpVg7Nc_ZomKKeswezEVFSCfz9fhLT54jeQ&s" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Jupiter Flute JFL700WD</h5>
+                        <p class="card-text">Instantly get a great sound.</p><br><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasJupiter" >Add To Cart</a>
+                    </div>
+                </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasJupiter" aria-labelledby="cartOffcanvasJupiterLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="cartOffcanvasJupiterLabel">🛒 Jupiter Flute JFL700WD</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="d-flex mb-3">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRpVg7Nc_ZomKKeswezEVFSCfz9fhLT54jeQ&s" height="80" class="me-3" alt="Jupiter Flute JFL700WD">
+                        <div>
+                            <h6>Jupiter Flute JFL700WD</h6>
+                            <p class="mb-0">Qty: 1</p>
+                            <p class="text-danger mb-0">You Pay ₹12,499 <small class="text-muted" style="text-decoration: line-through;">₹13,300</small></p>
+                        </div>
+                        </div>
+
+                        <h6 class="fw-bold">Specifications</h6>
+                        <ul class="list-unstyled small">
+                        <li><strong>Type:</strong> Concert Flute</li>
+                        <li><strong>Material:</strong> Silver-plated Nickel</li>
+                        <li><strong>Key:</strong> C</li>
+                        <li><strong>Finish:</strong> Silver Plate</li>
+                        <li><strong>Origin:</strong> Made in Indonesia</li>
+                        </ul>
+
+                        <h6 class="mt-4">Price Summary</h6>
+                        <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹13,300</span></li>
+                        <li class="list-group-item d-flex justify-content-between text-success">Discount <span>-₹801</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹12,499</span></li>
+                        <li class="list-group-item d-flex justify-content-between text-success">Delivery <span>Free</span></li>
+                        <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹12,499</span></li>
+                        </ul>
+
+                        <div class="mt-4 d-flex justify-content-around text-center">
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;">
+                            <p>Genuine<br>products</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;">
+                            <p>Secure<br>payments</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;">
+                            <p>Easy<br>returns</p>
+                        </div>
+                        </div>
+
+                        <div class="alert">
+                        🎉 You saved ₹801 on this purchase
+                        </div>
+
+                        <div class="mt-4 text-center">
+                        <button class="btn btn-success w-100">Proceed to Buy</button>
+                        </div>
+                    </div>
+                    </div>
+            </div><br>
+            <nav aria-label="Page navigation example" style="margin-left: 770px;">
+                    <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav><br>
+            <div class="card-container">
+                <div class="card" style="width: 18rem;" id="s">
+                    <img src="https://usa.yamaha.com/files/vc7sg_540x540_67bf111141bb4ea51e21e2e2773abdc8.jpg?impolicy=resize&imwid=396&imhei=396" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">AVC7 SG</h5>
+                        <p class="card-text">Greater expression for improving players.</p><br> 
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart"  data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasAVC7" >Add To Cart</a>
+                    </div>
+                </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasAVC7" aria-labelledby="cartOffcanvasAVC7Label">
+                    <div class="offcanvas-header">
+                        <h5 id="cartOffcanvasAVC7Label">🛒 Yamaha AVC7 SG</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="d-flex mb-3">
+                        <img src="https://usa.yamaha.com/files/vc7sg_540x540_67bf111141bb4ea51e21e2e2773abdc8.jpg?impolicy=resize&imwid=396&imhei=396" height="80" class="me-3" alt="Yamaha AVC7 SG">
+                        <div>
+                            <h6>Yamaha AVC7 SG</h6>
+                            <p class="mb-0">Qty: 1</p>
+                            <p class="text-danger mb-0">You Pay ₹85,000 <small class="text-muted" style="text-decoration: line-through;">₹90,000</small></p>
+                        </div>
+                        </div>
+
+                        <h6 class="fw-bold">Specifications</h6>
+                        <ul class="list-unstyled small">
+                        <li><strong>Type:</strong> Acoustic Violin</li>
+                        <li><strong>Size:</strong> 4/4 Full Size</li>
+                        <li><strong>Finish:</strong> Oil Finish</li>
+                        <li><strong>Material:</strong> Spruce top, Maple back & sides</li>
+                        <li><strong>Origin:</strong> Made in Japan</li>
+                        <li><strong>Features:</strong> Superior sound quality, ergonomic design for players</li>
+                        </ul>
+
+                        <h6 class="mt-4">Price Summary</h6>
+                        <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹90,000</span></li>
+                        <li class="list-group-item d-flex justify-content-between text-success">Discount <span>-₹5,000</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹85,000</span></li>
+                        <li class="list-group-item d-flex justify-content-between text-success">Delivery <span>Free</span></li>
+                        <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹85,000</span></li>
+                        </ul>
+
+                        <div class="mt-4 d-flex justify-content-around text-center">
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;">
+                            <p>Genuine<br>products</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;">
+                            <p>Secure<br>payments</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;">
+                            <p>Easy<br>returns</p>
+                        </div>
+                        </div>
+
+                        <div class="alert">
+                        🎉 You saved ₹5,000 on this purchase
+                        </div>
+
+                        <div class="mt-4 text-center">
+                        <button class="btn btn-success w-100">Proceed to Buy</button>
+                        </div>
+                    </div>
+                    </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://usa.yamaha.com/files/v10g_10sg_540x540_344a690a1ff0054b46475af714b15a94.jpg?impolicy=resize&imwid=396&imhei=396" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">AV10 SG</h5>
+                        <p class="card-text">An excellent step-up instrument.</p><br><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasAV10" >Add To Cart</a>
+                    </div>
+                </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasAV10" aria-labelledby="cartOffcanvasAV10Label">
+                    <div class="offcanvas-header">
+                        <h5 id="cartOffcanvasAV10Label">🛒 Yamaha AV10 SG</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      
+                        <div class="d-flex mb-3">
+                        <img src="https://usa.yamaha.com/files/v10g_10sg_540x540_344a690a1ff0054b46475af714b15a94.jpg?impolicy=resize&imwid=396&imhei=396" height="80" class="me-3" alt="AV10 SG">
+                        <div>
+                            <h6>Yamaha AV10 SG</h6>
+                            <p class="mb-0">Qty: 1</p>
+                            <p class="text-danger mb-0">You Pay ₹75,490 <small class="text-muted" style="text-decoration: line-through;">₹79,990</small></p>
+                        </div>
+                        </div>
+
+                       
+                        <h6 class="fw-bold">Specifications</h6>
+                        <ul class="list-unstyled small">
+                        <li><strong>Type:</strong> Acoustic Violin</li>
+                        <li><strong>Size:</strong> 4/4 Full Size</li>
+                        <li><strong>Top:</strong> Solid Spruce</li>
+                        <li><strong>Back & Sides:</strong> Maple</li>
+                        <li><strong>Fingerboard:</strong> Ebony</li>
+                        <li><strong>Finish:</strong> Oil Varnish</li>
+                        </ul>
+
+                       
+                        <h6 class="mt-4">Price Summary</h6>
+                        <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹79,990</span></li>
+                        <li class="list-group-item d-flex justify-content-between text-success">Discount <span>-₹4,500</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹75,490</span></li>
+                        <li class="list-group-item d-flex justify-content-between text-success">Delivery <span>Free</span></li>
+                        <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹75,490</span></li>
+                        </ul>
+
+                      
+                        <div class="mt-4 d-flex justify-content-around text-center">
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;">
+                            <p>Genuine<br>products</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;">
+                            <p>Secure<br>payments</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;">
+                            <p>Easy<br>returns</p>
+                        </div>
+                        </div>
+
+                      
+                        <div class="alert">
+                        🎉 You saved ₹4,500 on this purchase
+                        </div>
+
+                  
+                        <div class="mt-4 text-center">
+                        <button class="btn btn-success w-100">Proceed to Buy</button>
+                        </div>
+                    </div>
+                    </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://usa.yamaha.com/files/YEV104PRO_DR_f_0001_81cc3d74f93f0222ac2eb45f67afc06c.jpg?impolicy=resize&imwid=396&imhei=396" height="280px" class="card-img-top" alt="..."><br>
+                    <div class="card-body">
+                        <h5 class="card-title">YEV104PRO/YEV105PRO</h5>
+                        <p class="card-text">Yamaha sound to create this gorgeous live-performance instrument.</p>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasYEV104PRO" >Add To Cart</a>
+                    </div>
+                </div>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasYEV104PRO" aria-labelledby="cartOffcanvasYEV104PROLabel">
+                <div class="offcanvas-header">
+                    <h5 id="cartOffcanvasYEV104PROLabel">🛒 Yamaha YEV104PRO/YEV105PRO</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="d-flex mb-3">
+                    <img src="https://usa.yamaha.com/files/YEV104PRO_DR_f_0001_81cc3d74f93f0222ac2eb45f67afc06c.jpg?impolicy=resize&imwid=396&imhei=396" height="80" class="me-3" alt="YEV104PRO/YEV105PRO">
+                    <div>
+                        <h6>Yamaha YEV104PRO/YEV105PRO</h6>
+                        <p class="mb-0">Qty: 1</p>
+                        <p class="text-danger mb-0">You Pay ₹85,000 <small class="text-muted" style="text-decoration: line-through;">₹90,000</small></p>
+                    </div>
+                    </div>
+
+                    <h6 class="fw-bold">Specifications</h6>
+                    <ul class="list-unstyled small">
+                    <li><strong>Type:</strong> Electric Violin</li>
+                    <li><strong>Finish:</strong> Matte Black / Natural Wood</li>
+                    <li><strong>Performance:</strong> Designed for live-performance</li>
+                    <li><strong>Electronics:</strong> Advanced Yamaha sound engine</li>
+                    </ul>
+
+                    <h6 class="mt-4">Price Summary</h6>
+                    <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹90,000</span></li>
+                    <li class="list-group-item d-flex justify-content-between text-success">Discount <span>-₹5,000</span></li>
+                    <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹85,000</span></li>
+                    <li class="list-group-item d-flex justify-content-between text-success">Delivery <span>Free</span></li>
+                    <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹85,000</span></li>
+                    </ul>
+
+                    <div class="mt-4 d-flex justify-content-around text-center">
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;">
+                        <p>Genuine<br>products</p>
+                    </div>
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;">
+                        <p>Secure<br>payments</p>
+                    </div>
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;">
+                        <p>Easy<br>returns</p>
+                    </div>
+                    </div>
+
+                    <div class="alert">
+                    🎉 You saved ₹5,000 on this purchase
+                    </div>
+
+                    <div class="mt-4 text-center">
+                    <button class="btn btn-success w-100">Proceed to Buy</button>
+                    </div>
+                </div>
+                </div>
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://usa.yamaha.com/files/sv250_255_540x540_2c86452db6e1dbc0962b89774811e239.jpg?impolicy=resize&imwid=396&imhei=396" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SV-250/SV-255</h5>
+                        <p class="card-text">A solid-body electric violin for performance.</p><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasSV250"  >Add To Cart</a>
+                    </div>
+                </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasSV250" aria-labelledby="cartOffcanvasSV250Label">
+                    <div class="offcanvas-header">
+                        <h5 id="cartOffcanvasSV250Label">🛒 Yamaha SV-250/SV-255</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="d-flex mb-3">
+                        <img src="https://usa.yamaha.com/files/sv250_255_540x540_2c86452db6e1dbc0962b89774811e239.jpg?impolicy=resize&imwid=396&imhei=396" height="80" class="me-3" alt="Yamaha SV-250/SV-255">
+                        <div>
+                            <h6>Yamaha SV-250/SV-255</h6>
+                            <p class="mb-0">Qty: 1</p>
+                            <p class="text-danger mb-0">You Pay ₹1,65,000 <small class="text-muted" style="text-decoration: line-through;">₹1,75,000</small></p>
+                        </div>
+                        </div>
+
+                        <h6 class="fw-bold">Specifications</h6>
+                        <ul class="list-unstyled small">
+                        <li><strong>Type:</strong> Electric Violin</li>
+                        <li><strong>Body:</strong> Solid spruce with chambered design</li>
+                        <li><strong>Pickups:</strong> Dual Piezo Pickup System</li>
+                        <li><strong>Strings:</strong> SV-250 (4-string), SV-255 (5-string)</li>
+                        <li><strong>Finish:</strong> Oil Varnish</li>
+                        <li><strong>Output:</strong> Direct and Balanced</li>
+                        </ul>
+
+                        <h6 class="mt-4">Price Summary</h6>
+                        <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹1,75,000</span></li>
+                        <li class="list-group-item d-flex justify-content-between text-success">Discount <span>-₹10,000</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹1,65,000</span></li>
+                        <li class="list-group-item d-flex justify-content-between text-success">Delivery <span>Free</span></li>
+                        <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹1,65,000</span></li>
+                        </ul>
+
+                        <div class="mt-4 d-flex justify-content-around text-center">
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;">
+                            <p>Genuine<br>products</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;">
+                            <p>Secure<br>payments</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;">
+                            <p>Easy<br>returns</p>
+                        </div>
+                        </div>
+
+                        <div class="alert">
+                        🎉 You saved ₹10,000 on this purchase
+                        </div>
+
+                        <div class="mt-4 text-center">
+                        <button class="btn btn-success w-100">Proceed to Buy</button>
+                        </div>
+                    </div>
+                    </div>
+
+            </div><br>
+
+            <div class="card-container">
+                <div class="card" style="width: 18rem;" id="m">
+                    <img src="https://static.roland.com/assets/images/products/main/ev-1-wl_angle_tn.jpg" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">EV-1-WL</h5>
+                        <p class="card-text">Powerful MIDI expression pedal.</p><br><br><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasEV1WL" >Add To Cart</a>
+                    </div>
+                </div>
+
+                  
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasEV1WL" aria-labelledby="cartOffcanvasEV1WLLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="cartOffcanvasEV1WLLabel">🛒 Roland EV-1-WL</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="d-flex mb-3">
+                        <img src="https://static.roland.com/assets/images/products/main/ev-1-wl_angle_tn.jpg" height="80" class="me-3" alt="Roland EV-1-WL">
+                        <div>
+                            <h6>Roland EV-1-WL</h6>
+                            <p class="mb-0">Qty: 1</p>
+                            <p class="text-danger mb-0">You Pay ₹13,990 <small class="text-muted" style="text-decoration: line-through;">₹15,000</small></p>
+                        </div>
+                        </div>
+
+                        <h6 class="fw-bold">Specifications</h6>
+                        <ul class="list-unstyled small">
+                        <li><strong>Type:</strong> Wireless MIDI Expression Pedal</li>
+                        <li><strong>Connectivity:</strong> Bluetooth MIDI, USB, TRS</li>
+                        <li><strong>Control:</strong> Expression + toe switch support</li>
+                        <li><strong>Compatibility:</strong> Mac, Windows, iOS, Android</li>
+                        <li><strong>Power:</strong> 2 x AA Batteries or USB power</li>
+                        </ul>
+
+                        <h6 class="mt-4">Price Summary</h6>
+                        <ul class="list-group">
+                        <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹15,000</span></li>
+                        <li class="list-group-item d-flex justify-content-between text-success">Discount <span>-₹1,010</span></li>
+                        <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹13,990</span></li>
+                        <li class="list-group-item d-flex justify-content-between text-success">Delivery <span>Free</span></li>
+                        <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹13,990</span></li>
+                        </ul>
+
+                        <div class="mt-4 d-flex justify-content-around text-center">
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;">
+                            <p>Genuine<br>products</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;">
+                            <p>Secure<br>payments</p>
+                        </div>
+                        <div>
+                            <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;">
+                            <p>Easy<br>returns</p>
+                        </div>
+                        </div>
+
+                        <div class="alert">
+                        🎉 You saved ₹1,010 on this purchase
+                        </div>
+
+                        <div class="mt-4 text-center">
+                        <button class="btn btn-success w-100">Proceed to Buy</button>
+                        </div>
+                    </div>
+                    </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://static.roland.com/assets/images/products/main/tu-3_top_tn.jpg" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">TU-3 Chromatic Tuner</h5>
+                        <p class="card-text">Smooth 21-segment LED meter Pedal.</p><br><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasTU3" >Add To Cart</a>
+                    </div>
+                </div>
+
+                    
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasTU3" aria-labelledby="cartOffcanvasTU3Label">
+                <div class="offcanvas-header">
+                    <h5 id="cartOffcanvasTU3Label">🛒 TU-3 Chromatic Tuner</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                
+                    <div class="d-flex mb-3">
+                    <img src="https://static.roland.com/assets/images/products/main/tu-3_top_tn.jpg" height="80" class="me-3" alt="TU-3 Chromatic Tuner">
+                    <div>
+                        <h6>Roland TU-3 Chromatic Tuner</h6>
+                        <p class="mb-0">Qty: 1</p>
+                        <p class="text-danger mb-0">You Pay ₹6,990 <small class="text-muted" style="text-decoration: line-through;">₹7,450</small></p>
+                    </div>
+                    </div>
+
+                 
+                    <h6 class="fw-bold">Specifications</h6>
+                    <ul class="list-unstyled small">
+                    <li><strong>Type:</strong> Chromatic Pedal Tuner</li>
+                    <li><strong>Display:</strong> 21-segment LED meter</li>
+                    <li><strong>Modes:</strong> Chromatic & Guitar/Bass tuning modes</li>
+                    <li><strong>Features:</strong> Accu-Pitch, High brightness, Bypass output</li>
+                    <li><strong>Power:</strong> 9V battery or adapter</li>
+                    </ul>
+
+                
+                    <h6 class="mt-4">Price Summary</h6>
+                    <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹7,450</span></li>
+                    <li class="list-group-item d-flex justify-content-between text-success">Discount <span>-₹460</span></li>
+                    <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹6,990</span></li>
+                    <li class="list-group-item d-flex justify-content-between text-success">Delivery <span>Free</span></li>
+                    <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹6,990</span></li>
+                    </ul>
+
+                    
+                    <div class="mt-4 d-flex justify-content-around text-center">
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;">
+                        <p>Genuine<br>products</p>
+                    </div>
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;">
+                        <p>Secure<br>payments</p>
+                    </div>
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;">
+                        <p>Easy<br>returns</p>
+                    </div>
+                    </div>
+
+                
+                    <div class="alert">
+                    🎉 You saved ₹460 on this purchase
+                    </div>
+
+                    
+                    <div class="mt-4 text-center">
+                    <button class="btn btn-success w-100">Proceed to Buy</button>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://static.roland.com/assets/images/products/main/op-ae10mph_tn.jpg" height="280px" class="card-img-top" alt="..."><br>
+                    <div class="card-body">
+                        <h5 class="card-title">OP-AE10MPH</h5>
+                        <p class="card-text">Replacement Mouthpiece for the Aerophone AE-10.</p><br><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasOPAE10MPH" >Add To Cart</a>
+                    </div>
+                </div>
+
+                   
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasOPAE10MPH" aria-labelledby="cartOffcanvasOPAE10MPHLabel">
+                <div class="offcanvas-header">
+                    <h5 id="cartOffcanvasOPAE10MPHLabel">🛒 OP-AE10MPH Mouthpiece</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                   
+                    <div class="d-flex mb-3">
+                    <img src="https://static.roland.com/assets/images/products/main/op-ae10mph_tn.jpg" height="80" class="me-3" alt="OP-AE10MPH">
+                    <div>
+                        <h6>OP-AE10MPH</h6>
+                        <p class="mb-0">Qty: 1</p>
+                        <p class="text-danger mb-0">You Pay ₹2,190 <small class="text-muted" style="text-decoration: line-through;">₹2,490</small></p>
+                    </div>
+                    </div>
+
+            
+                    <h6 class="fw-bold">Specifications</h6>
+                    <ul class="list-unstyled small">
+                    <li><strong>Type:</strong> Replacement Mouthpiece</li>
+                    <li><strong>Compatible with:</strong> Roland Aerophone AE-10</li>
+                    <li><strong>Material:</strong> Durable plastic with reed-style tip</li>
+                    <li><strong>Design:</strong> Comfortable and responsive for wind controller play</li>
+                    <li><strong>Care:</strong> Easy to remove and clean</li>
+                    </ul>
+
+                   
+                    <h6 class="mt-4">Price Summary</h6>
+                    <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹2,490</span></li>
+                    <li class="list-group-item d-flex justify-content-between text-success">Discount <span>-₹300</span></li>
+                    <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹2,190</span></li>
+                    <li class="list-group-item d-flex justify-content-between text-success">Delivery <span>Free</span></li>
+                    <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹2,190</span></li>
+                    </ul>
+
+                    
+                    <div class="mt-4 d-flex justify-content-around text-center">
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;">
+                        <p>Genuine<br>products</p>
+                    </div>
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;">
+                        <p>Secure<br>payments</p>
+                    </div>
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;">
+                        <p>Easy<br>returns</p>
+                    </div>
+                    </div>
+
+                    
+                    <div class="alert">
+                    🎉 You saved ₹300 on this purchase
+                    </div>
+
+                
+                    <div class="mt-4 text-center">
+                    <button class="btn btn-success w-100">Proceed to Buy</button>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://usa.yamaha.com/files/sv250_255_540x540_2c86452db6e1dbc0962b89774811e239.jpg?impolicy=resize&imwid=396&imhei=396" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">SV-250/SV-255</h5>
+                        <p class="card-text">A solid-body electric violin for performance.</p><br><br>
+                        <a href="#" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="#" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasSV250" >Add To Cart</a>
+                    </div>
+                </div>
+            </div>
+           
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasSV250" aria-labelledby="cartOffcanvasSV250Label">
+            <div class="offcanvas-header">
+                <h5 id="cartOffcanvasSV250Label">🛒 Yamaha SV-250/SV-255</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                
+                <div class="d-flex mb-3">
+                <img src="https://usa.yamaha.com/files/sv250_255_540x540_2c86452db6e1dbc0962b89774811e239.jpg?impolicy=resize&imwid=396&imhei=396" height="80" class="me-3" alt="SV-250/SV-255">
+                <div>
+                    <h6>Yamaha SV-250/SV-255</h6>
+                    <p class="mb-0">Qty: 1</p>
+                    <p class="text-danger mb-0">You Pay ₹1,45,000 <small class="text-muted" style="text-decoration: line-through;">₹1,55,000</small></p>
+                </div>
+                </div>
+
+            
+                <h6 class="fw-bold">Specifications</h6>
+                <ul class="list-unstyled small">
+                <li><strong>Type:</strong> Electric Violin</li>
+                <li><strong>Strings:</strong> 4 (SV-250) / 5 (SV-255)</li>
+                <li><strong>Body:</strong> Solid Spruce top, Maple back</li>
+                <li><strong>Fingerboard:</strong> Ebony</li>
+                <li><strong>Output:</strong> Dual pickup system</li>
+                <li><strong>Usage:</strong> Stage performance, studio, or silent practice</li>
+                </ul>
+
+            
+                <h6 class="mt-4">Price Summary</h6>
+                <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹1,55,000</span></li>
+                <li class="list-group-item d-flex justify-content-between text-success">Discount <span>-₹10,000</span></li>
+                <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹1,45,000</span></li>
+                <li class="list-group-item d-flex justify-content-between text-success">Delivery <span>Free</span></li>
+                <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹1,45,000</span></li>
+                </ul>
+
+            
+                <div class="mt-4 d-flex justify-content-around text-center">
+                <div>
+                    <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;">
+                    <p>Genuine<br>products</p>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;">
+                    <p>Secure<br>payments</p>
+                </div>
+                <div>
+                    <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;">
+                    <p>Easy<br>returns</p>
+                </div>
+                </div>
+
+            
+                <div class="alert">
+                🎉 You saved ₹10,000 on this purchase
+                </div>
+
+            
+                <div class="mt-4 text-center">
+                <button class="btn btn-success w-100">Proceed to Buy</button>
+                </div>
+            </div>
+            </div>
+
+            <br>
+
+            <nav aria-label="Page navigation example" style="margin-left: 770px;">
+                    <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="https://usa.yamaha.com/products/musical_instruments/strings/silent_series/index.html" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav><br>
+            <div class="card-container">
+                <div class="card" style="width: 18rem;" id="ac">
+                    <img src="https://cdn.shopify.com/s/files/1/0657/6821/files/bajaao-electric-guitar-gigbags-bajaao-premium-8mm-padded-electric-guitar-gig-bag-29073504141491_200x.jpg?v=1743227895" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Bajaao Premium 8mm Padded Electric Guitar Gig Bag</h5>
+                        <p class="card-text">Backpack Strap with Grip Handle, Foam Padding.</p><br>
+                        <a href="##" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="##" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasBajaaoGigBag" >Add To Cart</a>
+                    </div>
+                </div>
+
+                   
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasBajaaoGigBag" aria-labelledby="cartOffcanvasBajaaoGigBagLabel">
+                <div class="offcanvas-header">
+                    <h5 id="cartOffcanvasBajaaoGigBagLabel">🛒 Bajaao Premium Gig Bag</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    
+                    <div class="d-flex mb-3">
+                    <img src="https://cdn.shopify.com/s/files/1/0657/6821/files/bajaao-electric-guitar-gigbags-bajaao-premium-8mm-padded-electric-guitar-gig-bag-29073504141491_200x.jpg?v=1743227895" height="80" class="me-3" alt="Bajaao Gig Bag">
+                    <div>
+                        <h6>Bajaao 8mm Padded Gig Bag</h6>
+                        <p class="mb-0">Qty: 1</p>
+                        <p class="text-danger mb-0">You Pay ₹1,390 <small class="text-muted" style="text-decoration: line-through;">₹1,499</small></p>
+                    </div>
+                    </div>
+
+                  
+                    <h6 class="fw-bold">Specifications</h6>
+                    <ul class="list-unstyled small">
+                    <li><strong>Type:</strong> Electric Guitar Gig Bag</li>
+                    <li><strong>Padding:</strong> 8mm Foam</li>
+                    <li><strong>Straps:</strong> Adjustable Backpack-Style</li>
+                    <li><strong>Handle:</strong> Padded Grip Handle</li>
+                    <li><strong>Color:</strong> Black</li>
+                    <li><strong>Compatibility:</strong> Fits most electric guitars</li>
+                    </ul>
+
+               
+                    <h6 class="mt-4">Price Summary</h6>
+                    <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹1,499</span></li>
+                    <li class="list-group-item d-flex justify-content-between text-success">Discount <span>-₹109</span></li>
+                    <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹1,390</span></li>
+                    <li class="list-group-item d-flex justify-content-between text-success">Delivery <span>Free</span></li>
+                    <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹1,390</span></li>
+                    </ul>
+
+               
+                    <div class="mt-4 d-flex justify-content-around text-center">
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;">
+                        <p>Genuine<br>products</p>
+                    </div>
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;">
+                        <p>Secure<br>payments</p>
+                    </div>
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;">
+                        <p>Easy<br>returns</p>
+                    </div>
+                    </div>
+
+                
+                    <div class="alert">
+                    🎉 You saved ₹109 on this purchase
+                    </div>
+
+                   
+                    <div class="mt-4 text-center">
+                    <button class="btn btn-success w-100">Proceed to Buy</button>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://static.roland.com/assets/images/products/categories/rct_sm_stands.jpg" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">KS-13</h5>
+                        <p class="card-text">Versatile table style for keyboards.Adjustable Z-stand.</p><br><br>
+                        <a href="##" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="##" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasKS13" >Add To Cart</a>
+                    </div>
+                </div>
+
+                 
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasKS13" aria-labelledby="cartOffcanvasKS13Label">
+                <div class="offcanvas-header">
+                    <h5 id="cartOffcanvasKS13Label">🛒 KS-13 Keyboard Stand</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                
+                    <div class="d-flex mb-3">
+                    <img src="https://static.roland.com/assets/images/products/categories/rct_sm_stands.jpg" height="80" class="me-3" alt="KS-13">
+                    <div>
+                        <h6>KS-13 Adjustable Z-Stand</h6>
+                        <p class="mb-0">Qty: 1</p>
+                        <p class="text-danger mb-0">You Pay ₹6,750 <small class="text-muted" style="text-decoration: line-through;">₹7,200</small></p>
+                    </div>
+                    </div>
+
+                
+                    <h6 class="fw-bold">Specifications</h6>
+                    <ul class="list-unstyled small">
+                    <li><strong>Type:</strong> Adjustable Keyboard Stand</li>
+                    <li><strong>Design:</strong> Table-style Z-stand</li>
+                    <li><strong>Material:</strong> Sturdy Steel Construction</li>
+                    <li><strong>Height Adjustment:</strong> Multiple Levels</li>
+                    <li><strong>Compatibility:</strong> Suits most 61–88 key keyboards</li>
+                    <li><strong>Portability:</strong> Foldable for easy transport</li>
+                    </ul>
+
+                   
+                    <h6 class="mt-4">Price Summary</h6>
+                    <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹7,200</span></li>
+                    <li class="list-group-item d-flex justify-content-between text-success">Discount <span>-₹450</span></li>
+                    <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹6,750</span></li>
+                    <li class="list-group-item d-flex justify-content-between text-success">Delivery <span>Free</span></li>
+                    <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹6,750</span></li>
+                    </ul>
+
+                
+                    <div class="mt-4 d-flex justify-content-around text-center">
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;">
+                        <p>Genuine<br>products</p>
+                    </div>
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;">
+                        <p>Secure<br>payments</p>
+                    </div>
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;">
+                        <p>Easy<br>returns</p>
+                    </div>
+                    </div>
+
+                   
+                    <div class="alert">
+                    🎉 You saved ₹450 on this purchase
+                    </div>
+
+                
+                    <div class="mt-4 text-center">
+                    <button class="btn btn-success w-100">Proceed to Buy</button>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://static.roland.com/assets/images/products/categories/rct_sm_accessory_foot_controllers.jpg" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Foot Controllers DP-10</h5>
+                        <p class="card-text">Momentary footswitch for selecting tones.</p><br><br>
+                        <a href="##" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="##" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasDP10" >Add To Cart</a>
+                    </div>
+                </div>
+
+                
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasDP10" aria-labelledby="cartOffcanvasDP10Label">
+                <div class="offcanvas-header">
+                    <h5 id="cartOffcanvasDP10Label">🛒 Foot Controller DP-10</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                
+                    <div class="d-flex mb-3">
+                    <img src="https://static.roland.com/assets/images/products/categories/rct_sm_accessory_foot_controllers.jpg" height="80" class="me-3" alt="DP-10 Footswitch">
+                    <div>
+                        <h6>DP-10 Momentary Footswitch</h6>
+                        <p class="mb-0">Qty: 1</p>
+                        <p class="text-danger mb-0">You Pay ₹2,430 <small class="text-muted" style="text-decoration: line-through;">₹2,700</small></p>
+                    </div>
+                    </div>
+
+                
+                    <h6 class="fw-bold">Specifications</h6>
+                    <ul class="list-unstyled small">
+                    <li><strong>Type:</strong> Momentary Footswitch</li>
+                    <li><strong>Compatible With:</strong> Roland and other keyboard brands</li>
+                    <li><strong>Features:</strong> Non-slip rubber plate, extended cable</li>
+                    <li><strong>Included:</strong> DP-10 unit, Owner's manual</li>
+                    <li><strong>Application:</strong> Sustain and tone selection</li>
+                    </ul>
+
+                
+                    <h6 class="mt-4">Price Summary</h6>
+                    <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹2,700</span></li>
+                    <li class="list-group-item d-flex justify-content-between text-success">Discount <span>-₹270</span></li>
+                    <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹2,430</span></li>
+                    <li class="list-group-item d-flex justify-content-between text-success">Delivery <span>Free</span></li>
+                    <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹2,430</span></li>
+                    </ul>
+
+                
+                    <div class="mt-4 d-flex justify-content-around text-center">
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;">
+                        <p>Genuine<br>products</p>
+                    </div>
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;">
+                        <p>Secure<br>payments</p>
+                    </div>
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;">
+                        <p>Easy<br>returns</p>
+                    </div>
+                    </div>
+
+                
+                    <div class="alert">
+                    🎉 You saved ₹270 on this purchase
+                    </div>
+
+                
+                    <div class="mt-4 text-center">
+                    <button class="btn btn-success w-100">Proceed to Buy</button>
+                    </div>
+                </div>
+                </div>
+
+
+                <div class="card" style="width: 18rem;">
+                    <img src="https://static.roland.com/assets/images/products/categories/rct_sm_microphones.jpg" height="300px" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Microphones</h5>
+                        <p class="card-text">GO: PODCAST High quality USB Condenser.</p><br><br>
+                        <a href="##" class="btn btn-outline-danger add-to-wishlist">❤️</a>
+                        <a href="##" class="btn btn-primary add-to-cart" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvasMic">Add To Cart</a>
+                    </div>
+                </div>
+                
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvasMic" aria-labelledby="cartOffcanvasMicLabel">
+                <div class="offcanvas-header">
+                    <h5 id="cartOffcanvasMicLabel">🛒 GO: PODCAST Microphone</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+               
+                    <div class="d-flex mb-3">
+                    <img src="https://static.roland.com/assets/images/products/categories/rct_sm_microphones.jpg" height="80" class="me-3" alt="GO: PODCAST Microphone">
+                    <div>
+                        <h6>GO: PODCAST USB Condenser</h6>
+                        <p class="mb-0">Qty: 1</p>
+                        <p class="text-danger mb-0">You Pay ₹6,990 <small class="text-muted" style="text-decoration: line-through;">₹7,490</small></p>
+                    </div>
+                    </div>
+
+                
+                    <h6 class="fw-bold">Specifications</h6>
+                    <ul class="list-unstyled small">
+                    <li><strong>Type:</strong> USB Condenser Microphone</li>
+                    <li><strong>Use:</strong> Podcasting, Voiceover, Streaming</li>
+                    <li><strong>Connectivity:</strong> USB-C</li>
+                    <li><strong>Features:</strong> High-definition audio, plug-and-play design</li>
+                    <li><strong>Compatibility:</strong> Windows, Mac, iOS, Android</li>
+                    </ul>
+
+                
+                    <h6 class="mt-4">Price Summary</h6>
+                    <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between">Bag Total <span>₹7,490</span></li>
+                    <li class="list-group-item d-flex justify-content-between text-success">Discount <span>-₹500</span></li>
+                    <li class="list-group-item d-flex justify-content-between">Subtotal <span>₹6,990</span></li>
+                    <li class="list-group-item d-flex justify-content-between text-success">Delivery <span>Free</span></li>
+                    <li class="list-group-item d-flex justify-content-between fw-bold">You Pay <span>₹6,990</span></li>
+                    </ul>
+
+                
+                    <div class="mt-4 d-flex justify-content-around text-center">
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/approval.png" style="width: 30px;">
+                        <p>Genuine<br>products</p>
+                    </div>
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/secured-letter--v1.png" style="width: 30px;">
+                        <p>Secure<br>payments</p>
+                    </div>
+                    <div>
+                        <img src="https://img.icons8.com/ios-filled/50/000000/return-purchase.png" style="width: 30px;">
+                        <p>Easy<br>returns</p>
+                    </div>
+                    </div>
+
+                
+                    <div class="alert">
+                    🎉 You saved ₹500 on this purchase
+                    </div>
+
+                
+                    <div class="mt-4 text-center">
+                    <button class="btn btn-success w-100">Proceed to Buy</button>
+                    </div>
+                </div>
+                </div>
+
+            </div><br>
+        </main>
+    </div>
+    <script>
+        let clicks = 0;
+        const countSpan = document.getElementById('count');
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', (event) => {
+            clicks++;
+            countSpan.textContent = clicks;
+            });
+        });
+
+        let wishlistCount = 0;
+        const wishlistSpan = document.getElementById('wishlist-count');
+        const wishlistButtons = document.querySelectorAll('.add-to-wishlist');
+
+        wishlistButtons.forEach(button => {
+        button.addEventListener('click', (event) => {
+            event.preventDefault();
+            wishlistCount++;
+            wishlistSpan.textContent = wishlistCount;
+            });
+        });
+    </script>
+</body>
+</html>
