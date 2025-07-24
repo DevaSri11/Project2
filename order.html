@@ -2,95 +2,224 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Your Order Plzzz...</title>
-    <style>
-        
-        body{
-            background-image: url(https://png.pngtree.com/thumb_back/fh260/background/20210331/pngtree-musical-instrument-combination-music-background-image_600864.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            padding: 200px;
-        }
-        #name{
-            border-radius: 10%;
-        }
-        #email{
-            border-radius: 10%;
-        }
-        #phone{
-            border-radius: 10%;
-        }
-        #instrument{
-            border-radius: 6%;
-        }
-        h1{
-            text-align: center;
-            font-weight: 900;
-        }
-        label{
-            font-weight: 900;
-            font-size: xx-large;
-        }
-        input{
-            font-size: xx-large;
-        }
-        .instrument{
-            font-size: xx-large;
-        }
-        #instrument{
-            font-size: xx-large;
-        }
-    </style>
+  <title>Order Musical Instruments</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+ 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    body {
+      background-image: url('https://thumbs.dreamstime.com/b/musical-score-16532061.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .ent {
+      background: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding: 60px 0;
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #ffd700;
+    }
+
+    .card {
+      border: none;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.7); /* golden glow */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .btn-order {
+      background-color: #ffc107;
+      color: black;
+      font-weight: bold;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .btn-order:hover {
+      background-color: #e0a800;
+    }
+
+    .modal-content {
+      background-color: #fff8e1;
+    }
+  </style>
 </head>
 <body>
-  <h1>Order Your Musical Instrument</h1>
-  <h1 style="font-style: italic;">Let the gift of music fill your home with joy and fun this holiday season. Cling On!</h1>
-    <center>
+
+  <div class="ent">
+    <div class="container">
+      <h1><i>Order Your Musical Instrument</i></h1>
+
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNkjhy-2yXiFRV1rVjotjAJDrdcbRMVLfIk-h5puHL_Mv0XODnuiPVgpQ87KUpw8iNUtM&usqp=CAU" class="card-img-top" alt="Guitar">
+            <div class="card-body text-center">
+              <h5 class="card-title">Guitar</h5>
+              <p class="card-text">Perfect for rock, pop, and acoustic vibes.</p>
+              <button class="btn-order" data-bs-toggle="modal" data-bs-target="#orderModal">Place Order</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://cdn.pixabay.com/photo/2017/08/07/03/53/drums-2599508_1280.jpg" class="card-img-top" alt="Drums">
+            <div class="card-body text-center">
+              <h5 class="card-title">Drums</h5>
+              <p class="card-text">Unleash the rhythm with professional drum kits.</p>
+              <button class="btn-order" data-bs-toggle="modal" data-bs-target="#orderModal">Place Order</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-4">
+          <div class="card">
+            <img src="https://i0.wp.com/stringsmagazine.com/wp-content/uploads/2021/08/violin-finger-positions-e1640129936665.jpg?fit=800%2C534&ssl=1" class="card-img-top" alt="Violin">
+            <div class="card-body text-center">
+              <h5 class="card-title">Violin</h5>
+              <p class="card-text">Elegant and classical, ideal for symphonies.</p>
+              <button class="btn-order" data-bs-toggle="modal" data-bs-target="#orderModal">Place Order</button>
+            </div>
+          </div>
+        </div>
+
+  
+        <div class="col-md-6">
+          <div class="card">
+            <img src="https://media.istockphoto.com/id/1413114407/photo/young-woman-playing-the-flute-musician-entertainment-culture.jpg?s=612x612&w=0&k=20&c=mrAlYYz0DxcS6PGijuevruUCTtO3m-JZMdyDnV6bWu4=" class="card-img-top" alt="Flute">
+            <div class="card-body text-center">
+              <h5 class="card-title">Wind Instruments</h5>
+              <p class="card-text">Includes flute, saxophone, trumpet and more.</p>
+              <button class="btn-order" data-bs-toggle="modal" data-bs-target="#orderModal">Place Order</button>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2h2aTr1sT2K984nY_nPgg3hQkj7XEMztefg&s" class="card-img-top" alt="Keyboard">
+            <div class="card-body text-center">
+              <h5 class="card-title">Keyboards</h5>
+              <p class="card-text">Versatile digital pianos for all musicians.</p>
+              <button class="btn-order" data-bs-toggle="modal" data-bs-target="#orderModal">Place Order</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkabmEwuC8-fRrPWRIw6yFEfH7p4YLmoJxfw&s" class="card-img-top" alt="Microphones">
+            <div class="card-body text-center">
+              <h5 class="card-title">Microphones</h5>
+              <p class="card-text">Capture crisp vocals with top-quality mics.</p>
+              <button class="btn-order" data-bs-toggle="modal" data-bs-target="#orderModal">Place Order</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card">
+            <img src="https://www.shutterstock.com/image-photo/raw-violin-put-on-white-260nw-1116481631.jpg" class="card-img-top" alt="Mixers">
+            <div class="card-body text-center">
+              <h5 class="card-title">Accessories</h5>
+              <p class="card-text">Cables, stands, cases and other essentials.</p>
+              <button class="btn-order" data-bs-toggle="modal" data-bs-target="#orderModal">Place Order</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="modal fade" id="orderModal" tabindex="-1" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
         <form action="/submit-order" method="post">
-    
-    <label for="name">Full Name:</label><br>
-    <input type="text" id="name" name="name" placeholder="your Name" required><br><br>
+          <div class="modal-header">
+            <h5 class="modal-title" id="orderModalLabel">Order Form</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
 
-    <label for="email">Email Address:</label><br>
-    <input type="email" id="email" name="email" placeholder="Your email" required><br><br>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
 
-    <label for="phone">Phone Number:</label><br>
-    <input type="tel" id="phone" name="phone" placeholder="Your Mobile No"><br><br>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
 
-    <label for="instrument">Select Instrument:</label><br>
-    <select id="instrument" name="instrument" required>
-      <option value="">-- Choose an Instrument --</option>
-      <option value="guitar">Guitar</option>
-      <option value="piano">Piano</option>
-      <option value="drums">Drums</option>
-      <option value="violin">Violin</option>
-      <option value="keyboards">Keyboards</option>
-      <option value="wind insruments">Wind Instruments</option>
-      <option value="accessories">Accessories</option>
-    </select><br><br>
+            <div class="mb-3">
+              <label for="instrument" class="form-label">Instrument</label>
+              <select class="form-select" id="instrument" name="instrument">
+                <option selected disabled>Select Instrument</option>
+                <option value="Guitar">Guitar</option>
+                <option value="Drums">Drums</option>
+                <option value="Violin">Violin</option>
+                <option value="Wind Instruments">Wind Instruments</option>
+                <option value="Keyboard">Keyboard</option>
+                <option value="Microphones">Microphones</option>
+                <option value="Mixers">Mixers</option>
+                <option value="Accessories">Accessories</option>
+              </select>
+            </div>
 
-    <label>Quantity:</label><br>
-    <input type="radio" id="qty1" name="quantity" value="1" required>
-    <label for="qty1">1</label>
+            <div class="mb-3">
+              <label for="quantity" class="form-label">Quantity</label>
+              <select class="form-select" id="quantity" name="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+            </div>
 
-    <input type="radio" id="qty2" name="quantity" value="2">
-    <label for="qty2">2</label>
+            <div class="mb-3">
+              <label for="notes" class="form-label">Additional Notes</label>
+              <textarea class="form-control" id="notes" name="notes" rows="3"></textarea>
+            </div>
+          </div>
 
-    <input type="radio" id="qty3" name="quantity" value="3">
-    <label for="qty3">3</label>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-order w-100">Submit Order</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 
-    <input type="radio" id="qty4" name="quantity" value="4">
-    <label for="qty4">4</label>
+  
+  
 
-    <input type="radio" id="qty5" name="quantity" value="5">
-    <label for="qty5">5</label><br><br>
-
-    <label for="notes">Additional Notes:</label><br>
-    <textarea id="notes" name="notes" rows="4" cols="40" placeholder="Special requests, delivery instructions, etc."></textarea><br><br>
-
-    <button type="submit" style="color: antiquewhite; background-color: black;">Submit Order</button>
-  </form>
-
-    </center>
 </body>
 </html>
